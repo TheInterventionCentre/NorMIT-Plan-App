@@ -310,6 +310,14 @@ Slicer_Remote_Add(LandmarkRegistration
   )
 list_conditional_append(Slicer_BUILD_LandmarkRegistration Slicer_REMOTE_DEPENDENCIES LandmarkRegistration)
 
+Slicer_Remote_Add(NorMIT-Plan
+  GIT_REPOSITORY "${git_protocol}://github.com/TheInterventionCentre/NorMIT-Plan"
+  GIT_TAG "12a9be7b9b2ca9585b5adb9ecce66ff7682f38db"
+  OPTION_NAME Slicer_BUILD_NorMIT-Plan
+  LABELS REMOTE_MODULE
+  )
+list_conditional_append(Slicer_BUILD_NorMIT-Plan Slicer_REMOTE_DEPENDENCIES NorMIT-Plan)
+
 #-----------------------------------------------------------------------------
 # Define list of additional options used to configure Slicer
 #------------------------------------------------------------------------------
